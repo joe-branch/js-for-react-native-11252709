@@ -10,3 +10,17 @@ function processArray(arrNum) {
         })
     )
 }
+
+// Task 2
+function formatArrayStrings(stringsArray, numbersArray) {
+    return (
+        stringsArray.map((string, index) => {
+            if(numbersArray[index] % 2 === 0){
+                return ( string.toUpperCase())
+            } 
+            else {
+                return (string.toLowerCase())
+            }
+        })
+    )
+}
